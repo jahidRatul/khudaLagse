@@ -9,12 +9,10 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="20dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-156dp">
+        android:padding="20dp">
 
         <ImageView
-            android:id="@+id/my_image"
+            android:id="@+id/login_image"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_centerHorizontal="true"
@@ -48,6 +46,7 @@
                 android:src="@android:drawable/stat_sys_phone_call_forward" />
 
             <EditText
+                android:id="@+id/user_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Mobile Number"
@@ -74,6 +73,7 @@
                 android:src="@android:drawable/ic_lock_idle_lock" />
 
             <EditText
+                android:id="@+id/user_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="password"
@@ -104,7 +104,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
-            android:background="#256D85"
+            android:background="@drawable/rounded_shape_for_button"
             android:padding="10dp"
             android:text="LOGIN"
             android:textColor="@color/white"
@@ -165,6 +165,7 @@
                 android:textColor="#F32424"
                 android:textStyle="bold"
                 android:layout_marginLeft="20dp"
+                android:clickable="true"
                 />
 
 
